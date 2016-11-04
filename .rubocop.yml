@@ -1,0 +1,91 @@
+AllCops:
+  DisplayCopNames: true
+  Exclude:
+    - "*/bin/**/*"
+    - "*/db/schema.rb"
+    - "*/tmp/**/*"
+    - "*/vendor/**/*"
+    - "thescore-api/spec/endpoints/**/*data.rb"
+  Include:
+    - "**/*.gemspec"
+    - "**/*.jbuilder"
+    - "**/*.rake"
+    - "**/Gemfile"
+    - "**/Rakefile"
+  TargetRubyVersion: 2.3
+
+Rails:
+  Enabled: true
+
+Style/ConditionalAssignment:
+  SingleLineConditionsOnly: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/Encoding:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/IfUnlessModifier:
+  MaxLineLength: 120
+
+Style/MultilineAssignmentLayout:
+  EnforcedStyle: same_line
+
+Style/ParenthesesAroundCondition:
+  AllowSafeAssignment: false
+
+Style/PercentQLiterals:
+  EnforcedStyle: upper_case_q
+
+Style/RaiseArgs:
+  EnforcedStyle: compact
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+  ConsistentQuotesInMultiline: true
+
+Style/StringLiteralsInInterpolation:
+  EnforcedStyle: double_quotes
+
+Metrics/AbcSize:
+  Enabled: false
+
+Metrics/BlockNesting:
+  Enabled: false
+
+Metrics/ClassLength:
+  Enabled: false
+
+Metrics/ModuleLength:
+  Enabled: false
+
+Metrics/CyclomaticComplexity:
+  Enabled: false
+
+Metrics/LineLength:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
+
+Metrics/ParameterLists:
+  Enabled: false
+
+Metrics/PerceivedComplexity:
+  Enabled: false
+
+Lint/EndAlignment:
+  AlignWith: variable
+
+Performance/RedundantMerge:
+  MaxKeyValuePairs: 1
+
+RSpec/VerifiedDoubles:
+  Enabled: true
+
+RSpec/ExampleLength:
+  Enabled: false
